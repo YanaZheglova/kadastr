@@ -86,6 +86,8 @@ top: 20px;
 }
 .menu {
   background-color: $color-accent;
+	position: relative;
+	z-index: 10;
 }
 .menu__list {
   display: flex;

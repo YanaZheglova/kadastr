@@ -198,6 +198,8 @@ body {
 
 .menu {
   background-color: #FFB342;
+  position: relative;
+  z-index: 10;
 }
 
 .menu__list {
@@ -237,11 +239,14 @@ body {
 }
 
 .flesh {
+  display: block;
   background-image: url(/img/flesh.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: -25px;
+  margin-top: -43px;
+  /* 	position: relative;
+  	z-index: -1; */
 }
 
 .flesh__contant {
@@ -277,6 +282,84 @@ body {
   line-height: 1.5;
   letter-spacing: 0.36px;
   color: #1C2752;
+}
+
+.services {
+  padding-top: 146px;
+  background-color: #F4F4F4;
+}
+
+.services__header {
+  max-width: 840px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.services__subtitle {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1C2752;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  margin-bottom: 22px;
+  padding: 0 22px 0 52px;
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+}
+.services__subtitle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 27px;
+  background-image: url(/img/pen.svg);
+  background-repeat: no-repeat;
+  top: -3px;
+  left: 16px;
+}
+
+.services__title {
+  font-size: 45px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #1C2752;
+  margin-bottom: 12px;
+}
+
+.services__text {
+  letter-spacing: 0.36px;
+}
+
+.services__cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 30px;
+  margin-top: 48px;
+}
+
+.card {
+  padding: 50px 46px 90px 35px;
+  background-color: #435494;
+}
+
+.card__icon {
+  margin-bottom: 20px;
+}
+
+.card__title {
+  font-size: 25px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: #FFB342;
+}
+
+.card__text {
+  color: #D2D2D2;
+  letter-spacing: 0.36px;
 }
 
 @media (max-width: 1150px) {
