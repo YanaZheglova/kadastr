@@ -1,0 +1,30 @@
+.about {
+	background-color: $color-accent;
+	padding-top: 150px;
+	
+}
+
+.about__header {
+	max-width: 832px;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 475px;
+}
+
+.about__text {
+	color: $color-dark;
+}
+.about__box {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1160px;
+	background-color: #fff;
+	padding: 70px 60px 80px 60px;
+	margin-top: -430px;
+}
+.about__img {
+	margin-left: 80px;
+}
+.about__commercial {
+	max-width: 550px;
+}
