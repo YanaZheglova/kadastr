@@ -35,33 +35,12 @@
 .contact-item {
   display: flex;
 }
-.contact-item__img {
 
-			top: -20px;
-			left: -30px;
-			margin-right: -4px;
+.contact-item__icon {
 
-	
-			background-color: $color-accent;
-			border-radius: 100px;
-			width: 67px;
-			height: 67px;
-		}
-
-
-.contact-item__mail-icon {
-position: relative;
-left: 19px;
-top: 20px;
 
 } 
 
-.contact-item__phono-icon  {
-	position: relative;
-	left: 9px;
-	top: 20px;
-	
-	} 
 
 
 .contact-item__info {
