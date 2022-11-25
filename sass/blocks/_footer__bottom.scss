@@ -44,8 +44,10 @@ color: #FFFFFF;
 }
 .footer__bottom-services {
 	padding-bottom: 21px;
+	padding-left: 20px;
 }
-.services__title {
+.services__title,
+.footer__bottom-title {
 	font-size: 20px;
 line-height: 1.4;
 letter-spacing: 0.36px;

@@ -8,5 +8,18 @@
 }
 
 
-.price__table {
+
+
+.price__bottom {
+	margin-top: 15px;
+}
+.price__bottom-list {
+}
+.price__bottom-item {
+	padding-left: 5px;
+	&::marker {
+		content: "•";
+		color: $color-accent;
+		font-size: 20px;
+	}
 }

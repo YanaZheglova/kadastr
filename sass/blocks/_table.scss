@@ -1,0 +1,35 @@
+.price__table {
+}
+
+/* Стили таблицы (IKSWEB) */
+table.iksweb {
+  text-decoration: none;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+table.iksweb th {
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffb342;
+  background-color: #435494;
+}
+table.iksweb td {
+  font-size: 15px;
+  color: #7e7e7e;
+}
+table.iksweb td,
+table.iksweb th {
+  white-space: pre-wrap;
+  padding: 10px 5px;
+  line-height: 15px;
+  vertical-align: middle;
+  border: 1px solid #1c2752;
+}
+table.iksweb tr:hover {
+  background-color: #ebebeb;
+}
+table.iksweb tr:hover td {
+  color: #1c2752;
+  cursor: default;
+}

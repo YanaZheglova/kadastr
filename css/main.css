@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -221,7 +222,7 @@ body {
 }
 
 .menu {
-  background-color: #FFB342;
+  background-color: #ffb342;
   position: relative;
   z-index: 10;
 }
@@ -271,12 +272,14 @@ body {
   background-size: cover;
   margin-top: -43px;
   /* 	position: relative;
-  	z-index: -1; */
+	z-index: -1; */
 }
 
 .flesh__contant {
-  max-width: 660px;
+  max-width: 700px;
   padding: 212px 0 230px;
+  display: flex;
+  flex-direction: column;
 }
 
 .flesh__title {
@@ -286,7 +289,7 @@ body {
   letter-spacing: 1.2px;
   text-transform: capitalize;
   color: #ffffff;
-  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .flesh__text {
@@ -296,27 +299,42 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: #ffffff;
-  padding-bottom: 30px;
+  order: -1;
+  padding-left: 35px;
+  position: relative;
+}
+.flesh__text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 27px;
+  background-image: url(/img/pen.svg);
+  background-repeat: no-repeat;
+  top: -3px;
+  left: 2px;
 }
 
 .flash__link {
-  background-color: #FFB342;
+  max-width: 230px;
+  background-color: #ffb342;
   border: 2px solid #ffb342;
-  padding: 19px 42px;
+  padding: 12px 42px;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.36px;
   color: #1C2752;
+  margin-top: 30px;
 }
 
 .services {
-  padding-top: 146px;
+  padding-top: 100px;
   background-color: #F4F4F4;
 }
 
 .services__cards {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 30px;
   margin-top: 48px;
@@ -340,7 +358,7 @@ body {
   letter-spacing: 0.36px;
   text-transform: capitalize;
   margin-bottom: 15px;
-  color: #FFB342;
+  color: #ffb342;
 }
 
 .card__text {
@@ -349,8 +367,9 @@ body {
 }
 
 .about {
-  background-color: #FFB342;
-  padding-top: 150px;
+  margin-top: 50px;
+  background-color: #ffb342;
+  padding-top: 100px;
 }
 
 .about__header {
@@ -388,6 +407,57 @@ body {
   margin-top: -87px;
   position: relative;
   z-index: -10;
+}
+
+.price__bottom {
+  margin-top: 15px;
+}
+
+.price__bottom-item {
+  padding-left: 5px;
+}
+.price__bottom-item::marker {
+  content: "•";
+  color: #ffb342;
+  font-size: 20px;
+}
+
+/* Стили таблицы (IKSWEB) */
+table.iksweb {
+  text-decoration: none;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+table.iksweb th {
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffb342;
+  background-color: #435494;
+}
+
+table.iksweb td {
+  font-size: 15px;
+  color: #7e7e7e;
+}
+
+table.iksweb td,
+table.iksweb th {
+  white-space: pre-wrap;
+  padding: 10px 5px;
+  line-height: 15px;
+  vertical-align: middle;
+  border: 1px solid #1c2752;
+}
+
+table.iksweb tr:hover {
+  background-color: #ebebeb;
+}
+
+table.iksweb tr:hover td {
+  color: #1c2752;
+  cursor: default;
 }
 
 .gallery {
@@ -544,13 +614,15 @@ body {
 
 .footer__bottom-services {
   padding-bottom: 21px;
+  padding-left: 20px;
 }
 
-.services__title {
+.services__title,
+.footer__bottom-title {
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: 0.36px;
-  color: #FFB342;
+  color: #ffb342;
   margin-bottom: 17px;
 }
 
