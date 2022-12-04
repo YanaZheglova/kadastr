@@ -5,6 +5,11 @@ body {
 	line-height: 1.5;
 	color: $color-main;
 /* font-family: 'Mulish', sans-serif; */
+
+}
+
+body._lick {
+	overflow: hidden;
 }
 
 .container {
