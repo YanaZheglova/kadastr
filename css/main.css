@@ -271,7 +271,7 @@ body._lick {
 
 .flesh {
   display: block;
-  background-image: url(/img/flesh.jpg);
+  background-image: url(../img/flesh.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
